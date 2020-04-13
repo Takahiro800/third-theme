@@ -4,70 +4,37 @@
 	<div id="contents-in">
 
 		<div id="main">
+			<?php if (have_posts()) : ?>
 
-			<section>
+				<section>
 
-				<h2><?php the_category(); ?>の求人一覧</h2>
+					<h2><?php the_category(); ?>の求人一覧</h2>
+					<?php query_posts('posts_per_page=3'); ?>
+					<?php while (have_posts()) : the_post(); ?>
 
-				<div class="list">
+						<div class="list">
 
-					<p class="img"><img src="images/sample1.jpg" alt=""></p>
+							<p class="img"><img src="images/sample1.jpg" alt=""></p>
 
-					<div class="text">
+							<div class="text">
 
-						<span class="new">new</span>
-						<span class="icon color1">正社員</span>
-						<span class="icon color2">アルバイト</span>
+								<span class="new">new</span>
+								<span class="icon color1">正社員</span>
+								<span class="icon color2">アルバイト</span>
 
-						<h4><?php the_title(); ?></h4>
+								<h4><?php the_title(); ?></h4>
 
-					</div>
-					<!--/.text-->
+							</div>
+							<!--/.text-->
 
-					<table class="ta1">
-						<tr>
-							<th>企業名</th>
-							<td>サンプルカンパニー</td>
-						</tr>
-						<tr>
-							<th>給与｜時給</th>
-							<td><span class="color1 big1">時給1,500円〜2,000円</span><br>
-								<span class="color1 big1">月給25万〜</span><br>
-								交通費別途支給</td>
-						</tr>
-						<tr>
-							<th>勤務地</th>
-							<td>勤務地や交通情報などここに書きます。</td>
-						</tr>
-						<tr>
-							<th>勤務時間</th>
-							<td>勤務時間をここに書きます。</td>
-						</tr>
-						<tr>
-							<th>その他</th>
-							<td>
-								<span class="icon">正社員</span>
-								<span class="icon">アルバイト</span>
-								<span class="icon">パート</span>
-								<span class="icon">未経験可</span>
-								<span class="icon">週休2日制</span>
-								<span class="icon">学歴不問</span>
-							</td>
-						</tr>
-					</table>
-					<p><a href="item.html" class="btn">詳細を見る</a></p>
+							<?php the_body(); ?>
+							<p><a href="item.html" class="btn">詳細を見る</a></p>
 
-				</div>
-				<!--list-->
-
-
-
-
-
-
-				<!--/list-->
-
-			</section>
+						</div>
+						<!--list-->
+				</section>
+			<?php endwhile; ?>
+		<?php endif; ?>
 
 		</div>
 		<!--/#main-->
