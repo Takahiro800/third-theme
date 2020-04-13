@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>求人サイト向け 無料ホームページテンプレート tp_job3</title>
+  <title><?php bloginfo('name'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="ここにサイト説明を入れます">
   <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-  <script src="js/openclose.js"></script>
-  <script src="js/fixmenu.js"></script>
-  <script src="js/fixmenu_pagetop.js"></script>
-  <script src="js/ddmenu_min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/openclose.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/fixmenu.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/fixmenu_pagetop.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/ddmenu_min.js"></script>
   <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

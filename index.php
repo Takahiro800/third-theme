@@ -11,9 +11,9 @@
 				<p>以下のサムネイル画像は直接imgタグで配置しています。必要に応じて入れ替えて下さい。</p>
 
 				<ul class="list2">
-					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">飲食店の求人<br><span>10件</span></a></li>
-					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">営業の求人<br><span>200件</span></a></li>
-					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">接客・販売の求人<br><span>300件</span></a></li>
+					<li><a href="<?php get_category_link(2); ?>"><img src="<?php the_post_thmubnail; ?>" alt="" class="img"><?php echo get_category(2) -> name; ?>の求人<br><span><?php echo get_category(2) -> count; ?>件</span></a></li>
+					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img"><?php echo get_category(3) -> name; ?>の求人<br><span><?php echo get_category(3) -> count; ?>件</span></a></li>
+					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img"><?php echo get_category(4) -> name; ?>の求人<br><span><?php echo get_category(4) -> count; ?>件</span></a></li>
 					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">事務の求人<br><span>1,234件</span></a></li>
 					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">飲食店の求人<br><span>10件</span></a></li>
 					<li><a href="list.html"><img src="<?php echo get_template_directory_uri(); ?>/images/00338.png" alt="" class="img">営業の求人<br><span>200件</span></a></li>
