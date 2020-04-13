@@ -1,46 +1,45 @@
-
 <footer>
 
-<div id="footermenu" class="inner">
-<ul>
-<li class="title">メニュータイトル</li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-</ul>
-<ul>
-<li class="title">メニュータイトル</li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-</ul>
-<ul>
-<li class="title">メニュータイトル</li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-</ul>
-<ul>
-<li class="title">メニュータイトル</li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-<li><a href="#">メニューサンプルメニューサンプル</a></li>
-</ul>
-</div>
-<!--/footermenu-->
+  <div id="footermenu" class="inner">
+    <ul>
+      <li class="title">メニュータイトル</li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+    </ul>
+    <ul>
+      <li class="title">メニュータイトル</li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+    </ul>
+    <ul>
+      <li class="title">メニュータイトル</li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+    </ul>
+    <ul>
+      <li class="title">メニュータイトル</li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+      <li><a href="#">メニューサンプルメニューサンプル</a></li>
+    </ul>
+  </div>
+  <!--/footermenu-->
 
-<div id="copyright">
-<small>Copyright&copy; <a href="index.html">SAMPLE JOB SITE</a> All Rights Reserved.</small>
-<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
-</div>
+  <div id="copyright">
+    <small>Copyright&copy; <a href="index.html">SAMPLE JOB SITE</a> All Rights Reserved.</small>
+    <span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+  </div>
 
 </footer>
 
@@ -51,10 +50,11 @@
 <div id="menubar_hdr" class="close"></div>
 <!--メニューの開閉処理条件設定　900px以下-->
 <script>
-if (OCwindowWidth() <= 900) {
-	open_close("menubar_hdr", "menubar-s");
-}
+  if (OCwindowWidth() <= 900) {
+    open_close("menubar_hdr", "menubar-s");
+  }
 </script>
-
+<?php wp_footer(); ?>
 </body>
+
 </html>
