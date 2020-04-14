@@ -36,16 +36,23 @@
       <li class="current"><a href="index.html">ホーム<span>Home</span></a></li>
       <li><a href="list_base.html">求人一覧<span>Recruit</span></a>
         <ul class="ddmenu">
-          <li><a href="list.html">飲食店（XX件）</a></li>
-          <li><a href="list.html">営業（XX件）</a></li>
-          <li><a href="list.html">接客・販売（XX件）</a></li>
-          <li><a href="list.html">事務（XX件）</a></li>
+          <li><a href="<?php echo get_category_link(2); ?>"><?php echo get_category(2) -> name; ?>（<?php echo get_category(2) -> count; ?>件）</a></li>
+          <li><a href="<?php echo get_category_link(3); ?>"><?php echo get_category(3) -> name; ?>（<?php echo get_category(3) -> count; ?>）</a></li>
+          <li><a href="<?php echo get_category_link(4); ?>"><?php echo get_category(4) -> name; ?>（<?php echo get_category(4) -> count; ?>件）</a></li>
+          <li><a href="<?php echo get_category_link(5); ?>"><?php echo get_category(5) -> name; ?>（<?php echo get_category(5) -> count; ?>件）</a></li>
+          <li><a href="<?php echo get_category_link(6); ?>"><?php echo get_category(6) -> name; ?>（<?php echo get_category(6) -> count; ?>件）</a></li>
+          <li><a href="<?php echo get_category_link(7); ?>"><?php echo get_category(7) -> name; ?>（<?php echo get_category(7) -> count; ?>件）</a></li>
+          <li><a href="<?php echo get_category_link(8); ?>"><?php echo get_category(8) -> name; ?>（<?php echo get_category(8) -> count; ?>件）</a></li>
+
         </ul>
       </li>
-      <li><a href="info.html">掲載のご案内<span>Information</span></a></li>
-      <li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
-      <li><a href="link.html">リンク<span>Link</span></a></li>
-      <li><a href="contact.html">お問い合わせ<span>Contact</span></a></li>
+      <?php
+      $args = array(
+        'menu' => 'global-navigation',
+        'container' => false,
+      );
+      wp_nav_menu($args);
+      ?>
     </ul>
   </nav>
   <!--小さな端末用（900px以下端末）メニュー-->
